@@ -1,0 +1,37 @@
+{
+		"name": "BBN-Website",
+		"version": "1.0.0",
+		"description": "The offcial website of the BigBotNetwork.",
+		"main": "src/index.js",
+		"repository": {
+				"type": "git",
+				"url": "git+https://github.com/BigBotNetwork/Website.git"
+		},
+		"author": "GregTCLTK",
+		"license": "MIT License",
+		"bugs": {
+				"url": "https://github.com/BigBotNetwork/Website/issues"
+		},
+		"homepage": "https://BigBotNetwork.de",
+		"dependencies": {
+				"body-parser": "^1.17.2",
+				"cheerio": "^1.0.0-rc.2",
+				"config": "^1.26.1",
+				"cookie-parser": "^1.4.3",
+				"cors": "^2.8.4",
+				"eris": "^0.7.2",
+				"express": "^4.16.2",
+				"express-session": "^1.15.4",
+				"express-theme-pug": "^1.0.5",
+				"i18n": "^0.8.3",
+				"marked": "^0.3.9",
+				"mustache": "^2.3.0",
+				"passport": "^0.3.2",
+				"passport-discord": "^0.1.2",
+				"pug": "^2.0.0-rc.3",
+				"request": "^2.81.0",
+				"rethinkdbdash": "^2.3.31",
+				"seedrandom": "^2.4.3",
+				"session-rethinkdb": "^2.0.0"
+		}
+}
