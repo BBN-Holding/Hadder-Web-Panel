@@ -2,7 +2,7 @@
 
 session_start();
 
-include('guzzle/autoload.php');
+include('libraries/autoload.php');
 use GuzzleHttp\Client;
 $http = new Client([
     'base_uri' => 'https://discordapp.com',
