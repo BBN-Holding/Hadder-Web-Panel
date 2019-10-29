@@ -16,10 +16,10 @@ function url($clientid, $redirect, $scope)
 
 function init($code, $redirect, $clientid, $clientsecretid)
 {
-$code = $_GET['code'];
-$data = "grant_type=authorization_code&code=$code&redirect_uri=$redirect&client_id=$clientid&client_secret=$clientsecretid";
+	$code = $_GET['code'];
+	$data = "grant_type=authorization_code&code=$code&redirect_uri=$redirect&client_id=$clientid&client_secret=$clientsecretid";
 
-$response = $GLOBALS['http']->request('POST', '/api/oauth2/token', [
+	$response = $GLOBALS['http']->request('POST', '/api/oauth2/token', [
 			'form_params' => [
 				'client_id' => $clientid,
 				'client_secret' => $clientsecretid,
@@ -27,39 +27,48 @@ $response = $GLOBALS['http']->request('POST', '/api/oauth2/token', [
 				'code' => $code,
 				'redirect_uri' => $redirect,
 			]
-		]);
-		$responseBody1 = $response->getBody(true);
-		$results= json_decode($responseBody1, true);
-		$_SESSION['auth_token'] = $results['access_token'];
+	]);
+	$responseBody1 = $response->getBody(true);
+	$results= json_decode($responseBody1, true);
+	$_SESSION['auth_token'] = $results['access_token'];
+}
+
+function disconnect()
+{
+	$response = $GLOBALS['http']->request('POST', '/api/oauth2/token/revoke', [
+        'form_params' => [
+			'Authorization' => 'Bearer ' . $_SESSION['auth_token']
+		]
+	]);
 }
 
 function get_user()
 {
-$response = $GLOBALS['http']->request('GET', '/api/users/@me', [
-    'headers' => [
-        'Authorization' => 'Bearer ' . $_SESSION['auth_token']
-    ]
+	$response = $GLOBALS['http']->request('GET', '/api/users/@me', [
+    	'headers' => [
+        	'Authorization' => 'Bearer ' . $_SESSION['auth_token']
+    	]
 ]);
 
-$responseBody = $response->getBody(true); 
-$response = json_decode($responseBody, true);
-$_SESSION['user'] = $responseBody;
-$_SESSION['username'] = $response['username'];
-$_SESSION['discrim'] = $response['discriminator'];
-$_SESSION['user_id'] = $response['id'];
-$_SESSION['user_avatar'] = $response['avatar'];
+	$responseBody = $response->getBody(true);
+	$response = json_decode($responseBody, true);
+	$_SESSION['user'] = $responseBody;
+	$_SESSION['username'] = $response['username'];
+	$_SESSION['discrim'] = $response['discriminator'];
+	$_SESSION['user_id'] = $response['id'];
+	$_SESSION['user_avatar'] = $response['avatar'];
 }
 
 function get_guilds()
 {
-$response = $GLOBALS['http']->request('GET', '/api/users/@me/guilds', [
-    'headers' => [
-        'Authorization' => 'Bearer '.$_SESSION['auth_token']
-    ]
-]);
-$responseBody = $response->getBody(true); 
-$response = json_decode($responseBody, true);
-return $response;
+	$response = $GLOBALS['http']->request('GET', '/api/users/@me/guilds', [
+    	'headers' => [
+        	'Authorization' => 'Bearer '.$_SESSION['auth_token']
+    	]
+	]);
+	$responseBody = $response->getBody(true);
+	$response = json_decode($responseBody, true);
+	return $response;
 }
 
 function get_guild($id)
@@ -71,8 +80,8 @@ function get_guild($id)
 	]);
 
 
-$responseBody = $response->getBody(true);
-$response = json_decode($responseBody, true);
-return $response;
+	$responseBody = $response->getBody(true);
+	$response = json_decode($responseBody, true);
+	return $response;
 }
 ?>

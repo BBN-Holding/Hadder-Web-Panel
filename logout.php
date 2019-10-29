@@ -7,11 +7,7 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-init("", "http://bigbotnetwork.de/Hadder/login.php", "637002314162372639", "");
-
-get_user();
-
-$_SESSION['guilds'] = get_guilds();
+disconnect();
 
 redirect("http://bigbotnetwork.de/Hadder/index.php");
 ?>
