@@ -33,15 +33,6 @@ function init($code, $redirect, $clientid, $clientsecretid)
 	$_SESSION['auth_token'] = $results['access_token'];
 }
 
-function disconnect()
-{
-	$response = $GLOBALS['http']->request('POST', '/api/oauth2/token/revoke', [
-        'form_params' => [
-			'Authorization' => 'Bearer ' . $_SESSION['auth_token']
-		]
-	]);
-}
-
 function get_user()
 {
 	$response = $GLOBALS['http']->request('GET', '/api/users/@me', [

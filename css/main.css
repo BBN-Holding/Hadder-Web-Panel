@@ -9,7 +9,7 @@ body {
 }
 
 table.highlight > tbody > tr:hover {
-    color: #1976D2 ;
+    color: #2F5E69;
 }
 
 table {
@@ -100,7 +100,7 @@ td {
 }
 
 .modal .modal-footer {
-    background-color: #1976D2;
+    background-color: #2F5E69;
 }
 
 #sound_form {

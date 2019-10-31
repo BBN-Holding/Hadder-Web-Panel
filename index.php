@@ -35,12 +35,15 @@ require "discord.php";
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="navList" class="right hide-on-med-and-down">
                  <?php
-                 if(isset($_SESSION['auth_token'])) {
+                    if(isset($_SESSION['auth_token'])) {
+                        echo '<li id="user"><img id=userAvatar src="https://cdn.discordapp.com/avatars/';
+                        echo $_SESSION['user_id'] . "/" . $_SESSION['user_avatar'] . '"/>';
+                        echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
+                        echo '</li><li><a href="logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                    echo '<h1>LOLOLLO</h1>';
-                 }
+                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/login.php", "identify guilds") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li></ul>';
+                    }
                 ?>
-
         </div>
     </nav>
         <h2 style="color : red;">Hadder Dashboard</h2>
@@ -49,6 +52,5 @@ require "discord.php";
         <br />
         <h1> User Guilds :</h1>
         <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
-        <h3 style="color:purple;"><a href="<?php echo url("637002314162372639", "http://bigbotnetwork.de/Hadder/login.php", "identify guilds"); ?>">Oauth Link </a></h3>
     </body>
 </html>
