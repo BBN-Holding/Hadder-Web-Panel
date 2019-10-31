@@ -2,11 +2,11 @@
 
 set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/Hadder/');
 
- error_reporting(E_ALL);
- ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 require "functions.php";
- require "discord.php";
+require "discord.php";
 
  ?>
 <!DOCTYPE html>
@@ -34,7 +34,13 @@ require "functions.php";
             <a id="logo-container" href="./" class="brand-logo">Hadder</a>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="navList" class="right hide-on-med-and-down">
-                <li id="user"><img id=userAvatar src="https://cdn.discordapp.com/avatars/<?php $extention = is_animated($_SESSION['user_avatar']); echo $_SESSION['user_id'] . "/" . $_SESSION['user_avatar'] . $extention; ?>" /><?php echo $_SESSION['username'] . '#'. $_SESSION['discrim']; ?></li><li><a href="logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li>        </ul>
+                 <?php
+                 if(isset($_SESSION['auth_token'])) {
+                    } else {
+                    echo '<h1>LOLOLLO</h1>';
+                 }
+                ?>
+
         </div>
     </nav>
         <h2 style="color : red;">Hadder Dashboard</h2>
