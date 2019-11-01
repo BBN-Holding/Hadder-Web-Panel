@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-disconnect();
+session_destroy();
 
 redirect("http://bigbotnetwork.de/Hadder/index.php");
 ?>
