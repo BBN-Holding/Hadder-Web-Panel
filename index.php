@@ -5,8 +5,8 @@ set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/Hadder
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require "functions.php";
-require "discord.php";
+require "auth/functions.php";
+require "auth/discord.php";
 
  ?>
 <!DOCTYPE html>
@@ -39,9 +39,9 @@ require "discord.php";
                         echo '<li id="user"><img id=userAvatar src="https://cdn.discordapp.com/avatars/';
                         echo $_SESSION['user_id'] . "/" . $_SESSION['user_avatar'] . '"/>';
                         echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
-                        echo '</li><li><a href="logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
+                        echo '</li><li><a href="auth/logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/login.php", "identify guilds") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li></ul>';
+                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/auth/login.php", "identify guilds") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li></ul>';
                     }
                 ?>
         </div>
@@ -52,5 +52,21 @@ require "discord.php";
         <br />
         <h1> User Guilds :</h1>
         <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
+
+    <footer class="page-footer blue darken-2">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="center">
+                    <a class="github-button" href="https://github.com/gregtcltk" data-size="large" aria-label="Follow @GregTCLTK on GitHub">Follow @GregTCLTK</a>
+                    <a class="github-button" href="https://github.com/bigbotnetwork/Hadder/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch Hadder on GitHub">Watch</a>
+                    <a class="github-button" href="https://github.com/bigbotnetwork/hadder" data-icon="octicon-star" data-size="large" aria-label="Star Hadder on GitHub">Star</a>
+                    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                    <a href="https://twitter.com/bigbotnetwork" class="twitter-follow-button right" data-size="large" data-show-count="false">Follow @bigbotnetwork</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <p>© 2019 BigBotNetwork</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
