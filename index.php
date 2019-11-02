@@ -41,7 +41,7 @@ require "auth/discord.php";
                         echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
                         echo '</li><li><a href="auth/logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/auth/login.php", "identify guilds email") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li></ul>';
+                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li></ul>';
                     }
                 ?>
         </div>
@@ -51,6 +51,9 @@ require "auth/discord.php";
         <br />
         <h1> User Guilds :</h1>
         <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
+        <br />
+        <h1> User Connections :</h1>
+        <p> <?php echo json_encode($_SESSION['connections']); ?></p>
 
     <footer class="page-footer blue darken-2">
         <div class="footer-copyright">

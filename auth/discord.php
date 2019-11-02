@@ -28,6 +28,7 @@ function init($code, $redirect, $clientid, $clientsecretid)
 				'redirect_uri' => $redirect,
 			]
 	]);
+
 	$responseBody1 = $response->getBody(true);
 	$results= json_decode($responseBody1, true);
 	$_SESSION['auth_token'] = $results['access_token'];
@@ -58,6 +59,7 @@ function get_guilds()
         	'Authorization' => 'Bearer '.$_SESSION['auth_token']
     	]
 	]);
+
 	$responseBody = $response->getBody(true);
 	$response = json_decode($responseBody, true);
 	return $response;
@@ -71,9 +73,21 @@ function get_guild($id)
 		]
 	]);
 
-
 	$responseBody = $response->getBody(true);
 	$response = json_decode($responseBody, true);
 	return $response;
+}
+
+function get_connections()
+{
+    $response = $GLOBALS['http']->request('GET', '/api/users/@me/connections', [
+        'headers' => [
+            'Authorization' => 'Bearer '.$_SESSION['auth_token']
+        ]
+    ]);
+
+    $responseBody = $response->getBody(true);
+    $response = json_decode($responseBody, true);
+    return $response;
 }
 ?>

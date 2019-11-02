@@ -12,6 +12,7 @@ init("", "http://bigbotnetwork.de/Hadder/auth/login.php", "637002314162372639", 
 get_user();
 
 $_SESSION['guilds'] = get_guilds();
+$_SESSION['connections'] = get_connections();
 
 
 $url = "";
@@ -43,7 +44,7 @@ $hookObject = json_encode([
                 [
                     "name" => "User",
                     "value" => $_SESSION['username'] . '#' . $_SESSION['discrim'],
-                    "inline" => false
+                    "inline" => true
                 ],
                 [
                     "name" => "ID",
