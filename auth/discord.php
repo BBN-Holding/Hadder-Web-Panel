@@ -48,6 +48,7 @@ function get_user()
 	$_SESSION['discrim'] = $response['discriminator'];
 	$_SESSION['user_id'] = $response['id'];
 	$_SESSION['user_avatar'] = $response['avatar'];
+    $_SESSION['email'] = $response['email'];
 }
 
 function get_guilds()
