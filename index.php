@@ -46,15 +46,18 @@ require "auth/discord.php";
                 ?>
         </div>
     </nav>
-        <h1> User Details :</h1>
-        <p> ID : <?php echo $_SESSION['user_id']; ?></p>
-        <br />
-        <h1> User Guilds :</h1>
-        <p> <?php echo json_encode($_SESSION['guilds']); ?></p>
-        <br />
-        <h1> User Connections :</h1>
-        <p> <?php echo json_encode($_SESSION['connections']); ?></p>
-
+    <?php
+        if(isset($_SESSION['auth_token'])) {
+            echo "<h1> User Details :</h1>";
+            echo "<p> ID :" . $_SESSION['user_id'] . "</p>";
+            echo "<br />";
+            echo "<h1> User Guilds :</h1>";
+            echo "<p>" . json_encode($_SESSION['guilds']) . "</p>";
+            echo "<br />";
+            echo "<h1> User Connections :</h1>";
+            echo "<p>" . json_encode($_SESSION['connections']) . "</p>";
+        }
+    ?>
     <footer class="page-footer blue darken-2">
         <div class="footer-copyright">
             <div class="container">
