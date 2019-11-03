@@ -32,7 +32,6 @@ require "auth/discord.php";
         <div class="nav-wrapper container">
             <img id="navbarIcon" src="https://bigbotnetwork.de/img/Hadder.png">
             <a id="logo-container" href="./" class="brand-logo">Hadder</a>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="navList" class="right hide-on-med-and-down">
                  <?php
                     if(isset($_SESSION['auth_token'])) {
