@@ -113,18 +113,6 @@ td {
     background-color: #24292e;
 }
 
-#serverIDInput {
-    text-align: center;
-    padding-top: 1%;
-}
-#soundList {
-    margin: auto;
-    width: 50%;
-    color: #1976D2;
-    border: none;
-    border-radius: 15px;
-}
-
 .collection-header {
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
