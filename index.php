@@ -63,7 +63,7 @@ require "auth/discord.php";
                     <a class="github-button" href="https://github.com/bigbotnetwork/Hadder/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch Hadder on GitHub">Watch</a>
                     <a class="github-button" href="https://github.com/bigbotnetwork/hadder" data-icon="octicon-star" data-size="large" aria-label="Star Hadder on GitHub">Star</a>
                     <script async defer src="https://buttons.github.io/buttons.js"></script>
-                    <a href="https://twitter.com/bigbotnetwork" class="twitter-follow-button right" data-size="large" data-show-count="false">Follow @bigbotnetwork</a>
+                    <a href="https://twitter.com/bigbotnetwork" class="twitter-follow-button right" data-size="large" data-show-count="false">Follow @BigBotNetwork</a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <p>© 2019 BigBotNetwork</p>
                 </div>
