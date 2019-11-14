@@ -10,7 +10,7 @@ require "auth/discord.php";
 
  ?>
 <!DOCTYPE html>
- <html>
+ <html lang="en">
     <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5400V6B28P"></script>
         <script>
@@ -43,6 +43,7 @@ require "auth/discord.php";
         <?php
         echo "<link rel=\"stylesheet\" href=\"css/main.css?v=" . rand() .  "\"/>";
         ?>
+        
         <link rel="stylesheet" href="css/materialize.css">
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
