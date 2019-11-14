@@ -81,7 +81,7 @@ require "auth/discord.php";
                     <li><a href="https://twitter.com/BigBotNetwork" class="icon brands fa-twitter">Twitter</a></li>
                     <li><a href="https://github.com/BigBotNetwork" class="icon brands fa-github">GitHub</a></li>
                     <li><a href="https://discordapp.com/invite/Vf4zCYn" class="icon brands fa-discord">Discord</a></li>
-                    <li><a href="https://donatebot.io/checkout/448554629282922527?buyer=477141528981012511" class="icon brands fa-paypal">Donatebot</a></li>
+                    <li><a href="https://donatebot.io/checkout/448554629282922527" class="icon brands fa-paypal">Donatebot</a></li>
                 </ul>
             </footer>
         </section>
