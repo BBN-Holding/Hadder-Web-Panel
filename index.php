@@ -71,9 +71,12 @@ require "auth/discord.php";
 
         <section id="main">
             <header>
-                <span class="avatar"><img src="https://bigbotnetwork.de/images/avatar.png" width="159" height="150"/></span>
-                <h4>BigBotNetwork</h4>
+                <span class="avatar"><img src="https://bigbotnetwork.de/images/avatar.png" width="260" height="270"/></span>
+                <br>
+                <h3>BigBotNetwork</h3>
             </header>
+            <br>
+            <br>
             <footer>
                 <ul class="icons">
                     <li><a href="https://twitter.com/BigBotNetwork" class="icon brands fa-twitter">Twitter</a></li>
