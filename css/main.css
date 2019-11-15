@@ -516,6 +516,14 @@ caption:hover {
     filter: brightness(55%);
 }
 
+#navbarIcon {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 4%;
+    height: auto;
+    margin-right: 1%;
+}
+
 #sound_modal {
     background-color: #24292e;
     width: 40%;
