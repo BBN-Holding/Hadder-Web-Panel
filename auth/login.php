@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-init("", "http://bigbotnetwork.de/Hadder/auth/login.php", "637002314162372639", "");
+init("", "http://bigbotnetwork.de/auth/login.php", "637002314162372639", "");
 
 get_user();
 
