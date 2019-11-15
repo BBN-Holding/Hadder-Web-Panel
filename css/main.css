@@ -99,25 +99,6 @@
 		margin: 0 0 0.525em 0;
 	}
 
-	h2 {
-		font-size: 1.25em;
-	}
-
-	h3 {
-		font-size: 1em;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	h5 {
-		font-size: 1em;
-	}
-
-	h6 {
-		font-size: 1em;
-	}
 
 	@media screen and (max-width: 480px) {
 
@@ -144,9 +125,6 @@
 		border-bottom: solid 1px #c8cccf;
 		margin: 3em 0;
 	}
-
-
-/* Icon */
 
 	.icon {
 		text-decoration: none;
@@ -184,135 +162,11 @@
 		}
 
 
-/* Actions */
-
-	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		cursor: default;
-		list-style: none;
-		margin-left: -0.75em;
-		padding-left: 0;
-	}
-
-		ul.actions li {
-			padding: 0 0 0 0.75em;
-			vertical-align: middle;
-		}
-
-		ul.actions.special {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			width: 100%;
-			margin-left: 0;
-		}
-
-			ul.actions.special li:first-child {
-				padding-left: 0;
-			}
-
-		ul.actions.stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			margin-left: 0;
-		}
-
-			ul.actions.stacked li {
-				padding: 0.975em 0 0 0;
-			}
-
-				ul.actions.stacked li:first-child {
-					padding-top: 0;
-				}
-
-		ul.actions.fit {
-			width: calc(100% + 0.75em);
-		}
-
-			ul.actions.fit li {
-				-moz-flex-grow: 1;
-				-webkit-flex-grow: 1;
-				-ms-flex-grow: 1;
-				flex-grow: 1;
-				-moz-flex-shrink: 1;
-				-webkit-flex-shrink: 1;
-				-ms-flex-shrink: 1;
-				flex-shrink: 1;
-				width: 100%;
-			}
-
-				ul.actions.fit li > * {
-					width: 100%;
-				}
-
-			ul.actions.fit.stacked {
-				width: 100%;
-			}
-
-		@media screen and (max-width: 480px) {
-
-			ul.actions:not(.fixed) {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				margin-left: 0;
-				width: 100% !important;
-			}
-
-				ul.actions:not(.fixed) li {
-					-moz-flex-grow: 1;
-					-webkit-flex-grow: 1;
-					-ms-flex-grow: 1;
-					flex-grow: 1;
-					-moz-flex-shrink: 1;
-					-webkit-flex-shrink: 1;
-					-ms-flex-shrink: 1;
-					flex-shrink: 1;
-					padding: 0.75em 0 0 0;
-					text-align: center;
-					width: 100%;
-				}
-
-					ul.actions:not(.fixed) li > * {
-						width: 100%;
-					}
-
-					ul.actions:not(.fixed) li:first-child {
-						padding-top: 0;
-					}
-
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
-					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button {
-						width: 100%;
-					}
-
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
-							margin-left: -0.5rem;
-						}
-
-		}
-
-/* Icons */
-
 	ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
-		margin-top: -0.675em;
+		margin-top: 0.675em;
 	}
 
 		ul.icons li {
@@ -381,8 +235,6 @@
 
 		}
 
-/* Main */
-
 	#main {
 		-moz-transform-origin: 50% 50%;
 		-webkit-transform-origin: 50% 50%;
@@ -409,7 +261,7 @@
 
 		#main .avatar {
 			position: relative;
-			display: block;
+			display: flex;
 			margin-bottom: 1.5em;
 		}
 
@@ -442,9 +294,6 @@
 		}
 
 
-
-/* Wrapper */
-
 	#wrapper {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -472,27 +321,6 @@
 		z-index: 2;
 	}
 
-		#wrapper > * {
-			z-index: 1;
-		}
-
-		#wrapper:before {
-			content: '';
-			display: block;
-		}
-
-		@media screen and (max-width: 360px) {
-
-			#wrapper {
-				padding: 0.75em;
-			}
-
-		}
-
-		body.is-ie #wrapper {
-			height: 100%;
-		}
-
 html {
     font-weight: 300;
     color: whitesmoke;
@@ -504,18 +332,6 @@ body {
 }
 
 
-caption:hover {
-    border-radius: 20px;
-    transition: 0.5s;
-    transform: translate3d(2px, -2px, 2px);
-}
-
-#parallaxBg {
-    display: block;
-    transform: translate3d(-50%, 185px, 0px);
-    filter: brightness(55%);
-}
-
 #navbarIcon {
     vertical-align: middle;
     border-radius: 50%;
@@ -523,27 +339,6 @@ caption:hover {
     height: auto;
     margin-right: 1%;
 }
-
-#sound_modal {
-    background-color: #24292e;
-    width: 40%;
-}
-
-.modal .modal-footer {
-    background-color: #2F5E69;
-}
-
-#sound_form {
-    margin: 10% 20% 10% 20%;
-}
-
-
-.header:hover {
-    border-radius: 20px;
-    transition: 0.5s;
-    transform: translate3d(2px, -2px, 2px);
-}
-
 
 #user {
     padding-right: 10px;

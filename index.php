@@ -98,13 +98,6 @@ require "auth/discord.php";
                 <div class="center">
                     <a href="//www.dmca.com/Protection/Status.aspx?ID=d10d5c07-b311-40d6-9d05-ef285be39ec5" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=d10d5c07-b311-40d6-9d05-ef285be39ec5"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
                     <br>
-                    <a class="github-button" href="https://github.com/gregtcltk" data-size="large" aria-label="Follow @GregTCLTK on GitHub">Follow @GregTCLTK</a>
-                    <a class="github-button" href="https://github.com/schlauer-hax" data-size="large" aria-label="Follow @Schlauer-Hax on GitHub">Follow @Schlauer-Hax</a>
-                    <a class="github-button" href="https://github.com/bigbotnetwork/Hadder/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch Hadder on GitHub">Watch</a>
-                    <a class="github-button" href="https://github.com/bigbotnetwork/hadder" data-icon="octicon-star" data-size="large" aria-label="Star Hadder on GitHub">Star</a>
-                    <script async defer src="https://buttons.github.io/buttons.js"></script>
-                    <a href="https://twitter.com/bigbotnetwork" class="twitter-follow-button right" data-size="large" data-show-count="false">Follow @BigBotNetwork</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <p>© 2019 BigBotNetwork</p>
                 </div>
             </div>
