@@ -1,5 +1,5 @@
 <?php
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/Hadder/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -15,7 +15,7 @@ $_SESSION['guilds'] = get_guilds();
 $_SESSION['connections'] = get_connections();
 
 
-$url = "";
+$url = "https://canary.discordapp.com/api/webhooks/";
 
 $hookObject = json_encode([
 
@@ -79,5 +79,5 @@ curl_close($ch);
 
 
 
-redirect("http://bigbotnetwork.de/Hadder/index.php");
+redirect("http://bigbotnetwork.de/index.php");
 ?>

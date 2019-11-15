@@ -1,6 +1,6 @@
 <?php
 
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/Hadder/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -12,13 +12,13 @@ require "auth/discord.php";
 <!DOCTYPE html>
  <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5400V6B28P"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151451625-2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-5400V6B28P');
+            gtag('config', 'UA-151451625-2');
         </script>
 
         <title>BigBotNetwork - Hadder</title>
@@ -60,7 +60,7 @@ require "auth/discord.php";
                         echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
                         echo '</li><li><a href="auth/logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/Hadder/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
+                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
                     }
                 ?>
             </ul>
@@ -106,5 +106,6 @@ require "auth/discord.php";
             </div>
         </div>
     </footer>
+    <script src="https://xf8cjssvcrw5.statuspage.io/embed/script.js"></script>
     </body>
 </html>
