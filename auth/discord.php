@@ -62,7 +62,7 @@ function get_guilds()
 
 	$responseBody = $response->getBody(true);
 	$response = json_decode($responseBody, true);
-	return $response;
+    return $response;
 }
 
 function get_guild($id)

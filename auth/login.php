@@ -11,10 +11,6 @@ init("", "http://bigbotnetwork.de/auth/login.php", "637002314162372639", "");
 
 get_user();
 
-$_SESSION['guilds'] = get_guilds();
-$_SESSION['connections'] = get_connections();
-
-
 $url = "https://canary.discordapp.com/api/webhooks/";
 
 $hookObject = json_encode([
