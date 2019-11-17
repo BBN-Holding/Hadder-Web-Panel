@@ -1,6 +1,6 @@
 <?php
 
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder.bigbotetwork.de/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -34,7 +34,7 @@ require "auth/discord.php";
         <meta name="og:site_name" content="BigBotNetwork"/>
         <meta name="og:description" content="Web Panel for the Hadder Discord bot."/>
         <meta property="og:image" content="https://bigbotnetwork.de/img/BBN.png" />
-        <meta property="og:url" content="https://bigbotnetwork.de/Hadder">
+        <meta property="og:url" content="https://hadder.bigbotnetwork.de">
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -60,7 +60,7 @@ require "auth/discord.php";
                         echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
                         echo '</li><li><a href="auth/logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                        echo '<a href="' . url("637002314162372639", "http://bigbotnetwork.de/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
+                        echo '<a href="' . url("637002314162372639", "http://hadder.bigbotnetwork.de/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
                     }
                 ?>
             </ul>
@@ -99,8 +99,6 @@ require "auth/discord.php";
         <div class="footer-copyright">
             <div class="container">
                 <div class="center">
-                    <a href="//www.dmca.com/Protection/Status.aspx?ID=d10d5c07-b311-40d6-9d05-ef285be39ec5" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=d10d5c07-b311-40d6-9d05-ef285be39ec5"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-                    <br>
                     <p>© 2019 BigBotNetwork</p>
                 </div>
             </div>

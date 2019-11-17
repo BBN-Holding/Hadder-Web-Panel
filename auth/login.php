@@ -1,5 +1,5 @@
 <?php
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/httpdocs/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder.bigbotnetwork.de/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-init("", "http://bigbotnetwork.de/auth/login.php", "637002314162372639", "");
+init("", "http://hadder.bigbotnetwork.de/auth/login.php", "637002314162372639", "");
 
 get_user();
 
@@ -75,5 +75,5 @@ curl_close($ch);
 
 
 
-redirect("http://bigbotnetwork.de/index.php");
+redirect("http://hadder.bigbotnetwork.de/index.php");
 ?>
