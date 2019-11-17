@@ -12,15 +12,15 @@ require "auth/discord.php";
 <!DOCTYPE html>
  <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151451625-2"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151451625-3"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-151451625-2');
+            gtag('config', 'UA-151451625-3');
         </script>
-
+        
         <title>BigBotNetwork - Hadder</title>
         <meta name="author" content="GregTCLTK">
         <meta name="author" content="Hax">
