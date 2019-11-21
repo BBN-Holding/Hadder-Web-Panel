@@ -71,7 +71,7 @@ require "auth/discord.php";
 
         <section id="main">
             <header>
-                <span class="avatar"><img src="https://bigbotnetwork.com/images/Hadder.png" width="260" height="270"/></span>
+                <span class="avatar"><img src="https://bigbotnetwork.com/images/avatar.png" width="260" height="270"/></span>
                 <br>
                 <h3>BigBotNetwork</h3>
             </header>
