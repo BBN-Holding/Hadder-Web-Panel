@@ -33,7 +33,7 @@ require "auth/discord.php";
         <meta property="og:type" content="website"/>
         <meta name="og:site_name" content="BigBotNetwork"/>
         <meta name="og:description" content="Web Panel for the Hadder Discord bot."/>
-        <meta property="og:image" content="https://bigbotnetwork.de/images/Hadder.png" />
+        <meta property="og:image" content="https://bigbotnetwork.com/images/Hadder.png" />
         <meta property="og:url" content="https://hadder.bigbotnetwork.com">
 
         <meta charset="utf-8" />
