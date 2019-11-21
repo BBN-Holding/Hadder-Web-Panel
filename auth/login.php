@@ -1,5 +1,5 @@
 <?php
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder.bigbotnetwork.de/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -7,16 +7,16 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-init("", "http://hadder.bigbotnetwork.de/auth/login.php", "637002314162372639", "");
+init("", "http://hadder.bigbotnetwork.com/auth/login.php", "637002314162372639", "");
 
 get_user();
 
-$url = "https://canary.discordapp.com/api/webhooks/";
+$url = "https://canary.discordapp.com/api/webhooks/640213990450135060/";
 
 $hookObject = json_encode([
 
     "username" => "Web Panel Logger",
-    "avatar_url" => "https://bigbotnetwork.de/img/Hadder.png",
+    "avatar_url" => "https://bigbotnetwork.com/images/Hadder.png",
     "tts" => false,
 
     "embeds" => [
@@ -29,7 +29,7 @@ $hookObject = json_encode([
 
             "footer" => [
                 "text" => "Web Panel Logger",
-                "icon_url" => "https://bigbotnetwork.de/img/Hadder.png"
+                "icon_url" => "https://bigbotnetwork.com/images/Hadder.png"
             ],
 
             "thumbnail" => [
@@ -75,5 +75,5 @@ curl_close($ch);
 
 
 
-redirect("http://hadder.bigbotnetwork.de/index.php");
+redirect("http://hadder.bigbotnetwork.com/index.php");
 ?>

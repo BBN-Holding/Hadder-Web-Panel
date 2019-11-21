@@ -1,6 +1,6 @@
 <?php
 
-set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder.bigbotetwork.de/');
+set_include_path('/var/www/vhosts/bigbotnetwork.wh.hostnation.de/hadder/');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -20,7 +20,7 @@ require "auth/discord.php";
 
             gtag('config', 'UA-151451625-3');
         </script>
-        
+
         <title>BigBotNetwork - Hadder</title>
         <meta name="author" content="GregTCLTK">
         <meta name="author" content="Hax">
@@ -33,8 +33,8 @@ require "auth/discord.php";
         <meta property="og:type" content="website"/>
         <meta name="og:site_name" content="BigBotNetwork"/>
         <meta name="og:description" content="Web Panel for the Hadder Discord bot."/>
-        <meta property="og:image" content="https://bigbotnetwork.de/img/BBN.png" />
-        <meta property="og:url" content="https://hadder.bigbotnetwork.de">
+        <meta property="og:image" content="https://bigbotnetwork.de/images/Hadder.png" />
+        <meta property="og:url" content="https://hadder.bigbotnetwork.com">
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -50,7 +50,7 @@ require "auth/discord.php";
 
     <nav class="blue darken-2" role="navigation">
         <div class="nav-wrapper container">
-            <img id="navbarIcon" src="https://bigbotnetwork.de/img/Hadder.png">
+            <img id="navbarIcon" src="https://bigbotnetwork.com/images/Hadder.png">
             <a id="logo-container" href="./" class="brand-logo">Hadder</a>
             <ul id="navList" class="right hide-on-med-and-down">
                  <?php
@@ -60,7 +60,7 @@ require "auth/discord.php";
                         echo $_SESSION['username'] . '#' . $_SESSION['discrim'];
                         echo '</li><li><a href="auth/logout.php"><i class="material-icons left">highlight_off</i>Logout</a></li></ul>';
                     } else {
-                        echo '<a href="' . url("637002314162372639", "http://hadder.bigbotnetwork.de/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
+                        echo '<a href="' . url("637002314162372639", "http://hadder.bigbotnetwork.com/auth/login.php", "identify guilds email connections") . '">' . '<i class="material-icons left">account_circle</i>Login with Discord</a></li>';
                     }
                 ?>
             </ul>
@@ -71,7 +71,7 @@ require "auth/discord.php";
 
         <section id="main">
             <header>
-                <span class="avatar"><img src="https://bigbotnetwork.de/images/avatar.png" width="260" height="270"/></span>
+                <span class="avatar"><img src="https://bigbotnetwork.com/images/Hadder.png" width="260" height="270"/></span>
                 <br>
                 <h3>BigBotNetwork</h3>
             </header>
