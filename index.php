@@ -50,7 +50,7 @@ require "auth/discord.php";
 
     <nav class="blue darken-2" role="navigation">
         <div class="nav-wrapper container">
-            <img id="navbarIcon" src="https://bigbotnetwork.com/images/Hadder.png">
+            <img id="navbarIcon" src="https://bigbotnetwork.com/images/Hadder.png" alt="Hadder">
             <a id="logo-container" href="./" class="brand-logo">Hadder</a>
             <ul id="navList" class="right hide-on-med-and-down">
                  <?php
