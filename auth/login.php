@@ -71,6 +71,4 @@ curl_setopt_array( $ch, [
 $response = curl_exec( $ch );
 curl_close( $ch );
 
-
 redirect("http://hadder.bigbotnetwork.com/index.php");
-?>
