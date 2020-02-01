@@ -99,7 +99,7 @@ require "auth/discord.php";
         <div class="footer-copyright">
             <div class="container">
                 <div class="center">
-                    <p>© 2019 BigBotNetwork</p>
+                    <p>© 2018-2020 BigBotNetwork</p>
                 </div>
             </div>
         </div>
