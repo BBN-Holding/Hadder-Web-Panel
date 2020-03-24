@@ -1,0 +1,16 @@
+{
+    "name": "Hadder-Web-Panel",
+    "description": "The official Hadder web panel.",
+    "keywords": ["hwp", "hadder-web-panel"],
+    "homepage": "https://hadder.bigbotnetwork.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GregTCLTK",
+            "homepage": "https://github.com/GregTCLTK"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    }
+}
