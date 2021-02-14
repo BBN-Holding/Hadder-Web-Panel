@@ -9,5 +9,5 @@ require "functions.php";
 
 session_destroy();
 
-redirect("http://hadder.bigbotnetwork.com/index.php");
+redirect("http://hadder.bbn.one/index.php");
 ?>

@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 require "discord.php";
 require "functions.php";
 
-init("", "http://hadder.bigbotnetwork.com/auth/login.php", "637002314162372639", "");
+init("", "http://hadder.bbn.one/auth/login.php", "637002314162372639", "");
 
 get_user();
 
@@ -16,19 +16,19 @@ $url = "https://canary.discordapp.com/api/webhooks/";
 $hookObject = json_encode([
 
     "username" => "Web Panel Logger",
-    "avatar_url" => "https://bigbotnetwork.com/images/Hadder.png",
+    "avatar_url" => "https://bbn.one/images/Hadder.png",
     "embeds" => [
         [
             "title" => "New Login",
             "type" => "rich",
             "description" => "New User logged in",
-            "url" => "https://hadder.bigbotnetwork.com",
+            "url" => "https://hadder.bbn.one",
             "timestamp" => date('Y-m-d\TH:i:s.Z\Z', time()),
             "color" => hexdec( "2F5E69" ),
 
             "footer" => [
                 "text" => "Web Panel Logger",
-                "icon_url" => "https://bigbotnetwork.com/images/Hadder.png"
+                "icon_url" => "https://bbn.one/images/Hadder.png"
             ],
 
             "thumbnail" => [
@@ -71,4 +71,4 @@ curl_setopt_array( $ch, [
 $response = curl_exec( $ch );
 curl_close( $ch );
 
-redirect("http://hadder.bigbotnetwork.com/index.php");
+redirect("http://hadder.bbn.one/index.php");
